@@ -67,12 +67,17 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  overflow-x: hidden;
+overflow-y:scroll !important;
+max-width: 100vw !important;
 }
 
 body.appear {
   display: block;
 }
-
+div.section{
+  padding-top: var(--nav-height);
+}
 header {
   height: var(--nav-height);
 }
@@ -203,12 +208,12 @@ main img {
 
 /* sections */
 main .section {
-  padding: 64px 16px;
+  padding: 64px 0px;
 }
 
 @media (width >= 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 64px 0px;
   }
 }
 
